@@ -36,7 +36,7 @@
 
     "extra": {
         "branch-alias": {
-            "dev-master": "1.4.x-dev"
+            "dev-fix-curl-support": "1.4.x-dev"
         }
     }
 }
