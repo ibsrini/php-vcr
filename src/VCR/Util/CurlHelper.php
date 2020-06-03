@@ -95,6 +95,10 @@ class CurlHelper
      */
     public static function getCurlOptionFromResponse(Response $response, $option = 0)
     {
+        if ($option == 3145761 && (int)$response->getStatusCode() == 200) {
+            $option = 0;
+        }
+        
         switch ($option) {
             case 0: // 0 == array of all curl options
                 $info = array();
